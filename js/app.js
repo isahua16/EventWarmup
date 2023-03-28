@@ -30,7 +30,10 @@ function change_background_color(event)
 
 function reset_background_color(event)
 {
-    
+    if(event[`key`] === `p`)
+    {
+        event[`currentTarget`][`style`][`backgroundColor`] = ``;
+    }
 }
 
 
